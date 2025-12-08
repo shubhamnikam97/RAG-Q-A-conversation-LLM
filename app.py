@@ -27,7 +27,7 @@ embeddings = HuggingFaceEmbeddings(model="all-MiniLM-L6-v2")
 # Heading of the application
 st.title("Conversational RAG with user input PDF and chat history")
 st.write("Upload PDF and chat with content")
-st.secrets['HF_TOKEN'] = os.getenv('HF_TOKEN')
+# st.secrets['HF_TOKEN'] = os.getenv('HF_TOKEN')
 
 # Asking user to share groq api key
 groq_api_key = st.text_input("Enter your Groq API key:", type="password")
@@ -146,3 +146,4 @@ if groq_api_key:
 else:
 
     st.warning("Please enter your groq api key.")
+
