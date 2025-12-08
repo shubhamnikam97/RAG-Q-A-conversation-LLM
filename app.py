@@ -18,7 +18,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv()
 
-os.environ['HF_TOKEN'] = os.getenv('HUGGING_FACE_TOKEN')
+os.environ['HF_TOKEN'] = os.getenv('HF_TOKEN')
 groq_api_key = os.getenv('GROQ_API_KEY')
 
 # Creating embedding
@@ -27,6 +27,7 @@ embeddings = HuggingFaceEmbeddings(model="all-MiniLM-L6-v2")
 # Heading of the application
 st.title("Conversational RAG with user input PDF and chat history")
 st.write("Upload PDF and chat with content")
+st.secrets['HF_TOKEN'] = os.getenv('HF_TOKEN')
 
 # Asking user to share groq api key
 groq_api_key = st.text_input("Enter your Groq API key:", type="password")
@@ -143,4 +144,5 @@ if groq_api_key:
             st.write("Chat History:", session_history.messages)
 
 else:
+
     st.warning("Please enter your groq api key.")
