@@ -82,11 +82,12 @@ This allows long conversations about PDFs.
 ---
 
 ## 📁 Project Structure
+```
 .
 ├── app.py # Main RAG Chatbot application
 ├── requirements.txt # Dependencies
 └── README.md # Documentation
-
+```
 ---
 
 ## 🔧 Installation & Setup
