@@ -5,7 +5,11 @@ The system maintains full **chat history**, reformulates contextual questions, a
 Built using **LangChain**, **Groq LLM**, **HuggingFace Embeddings**, and **ChromaDB**.
 
 ---
+## 🌐 Live Demo
+👉 **Try the app here:**
+https://rag-q-a-conversation-llm-guebqxflbaknx4ypdpexkq.streamlit.app/
 
+---
 ## 🚀 Features
 
 - **Conversational PDF Q&A**  
