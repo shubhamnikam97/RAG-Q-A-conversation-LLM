@@ -126,6 +126,7 @@ streamlit run "file_path/app.py"
 ```
 
 🖥 Usage Instructions
+
 ✔ Step 1 — Enter your Groq API key
 
 Using sidebar or .env.
@@ -141,12 +142,9 @@ Example: my_research_session
 ✔ Step 4 — Ask questions
 
 Examples:
-
-“Summarize section 2.”
-
-“What did the author say about neural networks?”
-
-“How does this compare to chapter 3?”
+- “Summarize section 2.”
+- “What did the author say about neural networks?”
+- “How does this compare to chapter 3?”
 
 ✔ Step 5 — View chat history
 
